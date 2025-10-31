@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>주사위 5개 굴리기</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container" role="main">
+    <h1>주사위 5개 굴리기 🎲</h1>
+
+    <section class="controls" aria-label="controls">
+      <button id="rollBtn" class="btn primary" aria-live="polite">ROLL</button>
+      <div class="info">
+        <div id="sum" class="sum" aria-live="polite">합계: —</div>
+        <div class="hint">주사위를 클릭하면 고정됩니다. (키보드: Enter 또는 Space)</div>
+      </div>
+    </section>
+
+    <section class="dice-area" aria-label="dice area">
+      <!-- 5개의 주사위 슬롯: JS가 초기화 -->
+      <div id="dice" class="dice" role="list"></div>
+    </section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
